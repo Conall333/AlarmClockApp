@@ -94,9 +94,8 @@ public class AlarmActivity extends AppCompatActivity
                 }
 
                 // allowWhileIdle makes the alarm work when app in background
-                //alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, time, pendingIntent);
-                AlarmManager.AlarmClockInfo info = new AlarmManager.AlarmClockInfo(time,pendingIntent);
-                alarmManager.setAlarmClock(info, pendingIntent);
+                alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, time, pendingIntent);
+
 
 
             }

@@ -15,8 +15,5 @@
         android:title="Set Alarm"
         app:showAsAction="always" />
 
-    <item
-        android:id="@+id/about_item"
-        android:title="About" />
 
 </menu>

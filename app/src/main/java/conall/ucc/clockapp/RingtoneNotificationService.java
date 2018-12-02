@@ -18,6 +18,9 @@ public class RingtoneNotificationService extends Service
         return null;
     }
 
+
+    // when service is stared gives a notification which allows the user to dismiss the alarm
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId)
     {
