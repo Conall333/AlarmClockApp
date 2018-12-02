@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".ColourActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hands_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Clock Colours"
+            android:fontFamily="@font/font_fam"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/hands_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/font_fam"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/spinner_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Background Colours"
+            android:fontFamily="@font/font_fam"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/background_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".05"
+        android:fontFamily="@font/font_fam"
+        android:background="@drawable/buttonshape"
+        android:text="Change Colours!" />
+
+</LinearLayout>

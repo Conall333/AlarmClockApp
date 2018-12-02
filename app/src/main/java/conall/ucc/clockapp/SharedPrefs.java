@@ -18,6 +18,10 @@ public class SharedPrefs {
     private static final String COLOR_SET = "coloursAreSet";
     public static final String CLOCK_COLOUR = "hands";
     public static final String BACKGROUND_COLOUR = "background";
+    public static final String HOUR = "time_hour";
+    public static final String MINUTE = "time_minute";
+    public static final String TIME_PICKER = "time_picker";
+
 
     public SharedPrefs(Context context){
         this._context = context;
@@ -39,8 +43,8 @@ public class SharedPrefs {
 
     public HashMap<String, String> getColors(){
         HashMap<String, String> user = new HashMap<String, String>();
-        user.put(CLOCK_COLOUR, pref.getString(CLOCK_COLOUR, "RED"));
-        user.put(BACKGROUND_COLOUR, pref.getString(BACKGROUND_COLOUR, "BLACK"));
+        user.put(CLOCK_COLOUR, pref.getString(CLOCK_COLOUR, "BLACK"));
+        user.put(BACKGROUND_COLOUR, pref.getString(BACKGROUND_COLOUR, "WHITE"));
         return user;
     }
 

@@ -112,6 +112,10 @@ public class MySurfaceView extends SurfaceView implements Runnable {
             c.drawColor(Color.RED);
         }
 
+        else if (bgColour.equals("WHITE")) {
+            c.drawColor(Color.WHITE);
+        }
+
         else if (bgColour.equals("MAGENTA")) {
             c.drawColor(Color.MAGENTA);
         }
